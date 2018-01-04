@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="GitHub">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -8,9 +8,9 @@
       <br>
       <li><a href="/#/es">Go to Spain!</a></li>
     </ul>
-  <button v-on:click="count++">Increase the count!</button>
-  <button v-on:click="count--">Decrease the count!</button>
-  <div> {{count}} </div>
+    <form v-on: submit.prevent="queryGitHub()">
+    <input type="text" placeholder="GitHub username" />
+  </form>
   </div>
 
 
@@ -18,11 +18,10 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'GitHub',
   data () {
     return {
       msg: 'Let\'s get Creative!',
-      count: 0
     }
   }
 }

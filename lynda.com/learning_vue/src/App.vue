@@ -1,8 +1,10 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <img style="width: 600px;"src="./assets/instagram.jpg">
     <router-view/>
   </div>
+
+
 </template>
 
 <script>
